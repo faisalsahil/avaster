@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country_name: MyString
+  alpha2_code: MyString
+  alpha3_code: MyString
+  calling_code: MyString
+  is_avaster_supported: false
+  is_active: false
+
+two:
+  country_name: MyString
+  alpha2_code: MyString
+  alpha3_code: MyString
+  calling_code: MyString
+  is_avaster_supported: false
+  is_active: false

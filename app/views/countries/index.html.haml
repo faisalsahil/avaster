@@ -1,0 +1,32 @@
+.x_panel
+  .x_title
+    %h2 Countries
+  .clearfix
+  .x_content
+    %table.table.table-striped.table-hover.listing_table
+      %thead
+        %th Country name
+        %th Alpha2 code
+        %th Alpha3 code
+        %th Calling code
+        %th Is avaster supported
+        %th Currencies
+        %th Is active
+        %th
+      %tbody
+        - @countries.each do |country|
+          %tr
+            %td= country.country_name
+            %td= country.alpha2_code
+            %td= country.alpha3_code
+            %td= country.calling_code
+            %td= country.is_avaster_supported
+            %td= link_to country.currencies.count, country_currencies_path(country)
+            %td= country.is_active
+            %td
+              = link_to 'Show', country
+              |
+              = link_to 'Edit', edit_country_path(country)
+              |
+              = link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' }
+

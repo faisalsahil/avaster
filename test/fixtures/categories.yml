@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category_title: MyString
+  is_restricted: false
+  parent_id: 1
+  coins_required: 1
+  free_listing_allowed: 1
+  free_month_duration: 1
+  paid_month_duration: 1
+  is_active: false
+
+two:
+  category_title: MyString
+  is_restricted: false
+  parent_id: 1
+  coins_required: 1
+  free_listing_allowed: 1
+  free_month_duration: 1
+  paid_month_duration: 1
+  is_active: false

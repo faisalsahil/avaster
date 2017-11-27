@@ -1,0 +1,11 @@
+= simple_form_for(@country) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :country_name
+    = f.input :alpha2_code
+    = f.input :alpha3_code
+    = f.input :calling_code
+    = f.input :is_avaster_supported
+    = f.input :is_active
+  .form-actions
+    = f.button :submit

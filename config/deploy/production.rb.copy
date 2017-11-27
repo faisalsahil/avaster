@@ -1,0 +1,10 @@
+server '', user: 'live', roles: %w{app db web}
+
+set :application, ''
+
+set :deploy_to, '/home/live/'
+
+set :repo_url, ''
+
+
+set :tmp_dir, '/home/live/tmp'

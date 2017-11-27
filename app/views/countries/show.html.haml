@@ -1,0 +1,22 @@
+%p#notice= notice
+%p
+  %strong Country name:
+  = @country.country_name
+%p
+  %strong Alpha2 code:
+  = @country.alpha2_code
+%p
+  %strong Alpha3 code:
+  = @country.alpha3_code
+%p
+  %strong Calling code:
+  = @country.calling_code
+%p
+  %strong Is avaster supported:
+  = @country.is_avaster_supported
+%p
+  %strong Is active:
+  = @country.is_active
+= link_to 'Edit', edit_country_path(@country)
+|
+= link_to 'Back', countries_path

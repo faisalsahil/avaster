@@ -1,0 +1,35 @@
+.row
+  .col-md-10
+    - if params[:id].present?
+      %h1 Sub Categories
+    - else
+      %h1 Categories
+  .col-md-2
+    = link_to 'New Category', new_category_path, class: 'btn btn-mini btn-primary'
+%table.table.table-striped.listing_table
+  %thead
+    %tr
+      %th Category title
+      %th Is restricted
+      %th Coins required
+      %th Free listing allowed
+      %th Free month duration
+      %th Paid month duration
+      %th Sub Categories
+      %th Is active
+      %th
+  %tbody
+    - @categories.each do |category|
+      %tr
+        %td= category.category_title
+        %td= category.is_restricted
+        %td= category.coins_required
+        %td= category.free_listing_allowed
+        %td= category.free_month_duration
+        %td= category.paid_month_duration
+        %td= link_to category.sub_categories.count, categories_path(id: category.id)
+        %td= category.is_active
+        %td
+          = link_to 'Show', category
+          = link_to 'Edit', edit_category_path(category)
+          = link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }

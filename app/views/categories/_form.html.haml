@@ -1,0 +1,13 @@
+= simple_form_for(@category) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :category_title
+    = f.association :parent, label_method: :category_title
+    = f.input :coins_required
+    = f.input :free_listing_allowed
+    = f.input :free_month_duration
+    = f.input :paid_month_duration
+    = f.input :is_restricted
+    = f.input :is_active
+  .form-actions
+    = f.button :submit

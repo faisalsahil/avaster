@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  currency_name: MyString
+  iso_code: MyString
+  symbol: MyString
+  sorder: MyString
+
+two:
+  currency_name: MyString
+  iso_code: MyString
+  symbol: MyString
+  sorder: MyString

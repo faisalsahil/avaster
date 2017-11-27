@@ -1,0 +1,13 @@
+development:
+  adapter:  postgresql
+  encoding: unicode
+  database: <%= ENV['AVASTER_DB_NAME_' + ENV['AVASTER_MODE']]%>
+  username: <%= ENV['AVASTER_DB_USERNAME_' + ENV['AVASTER_MODE']]%>
+  password: <%= ENV['AVASTER_DB_PASSWORD_' + ENV['AVASTER_MODE']]%>
+
+production:
+  adapter:  postgresql
+  encoding: unicode
+  database: <%= ENV['AVASTER_DB_NAME_' + ENV['AVASTER_MODE']]%>
+  username: <%= ENV['AVASTER_DB_USERNAME_' + ENV['AVASTER_MODE']]%>
+  password: <%= ENV['AVASTER_DB_PASSWORD_' + ENV['AVASTER_MODE']]%>
