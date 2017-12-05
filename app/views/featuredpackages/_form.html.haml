@@ -1,0 +1,8 @@
+= simple_form_for(@featuredpackage) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :days
+    = f.input :coins_required
+    = f.input :is_active
+  .form-actions
+    = f.button :submit

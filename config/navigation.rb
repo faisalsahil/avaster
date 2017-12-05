@@ -10,9 +10,9 @@ SimpleNavigation::Configuration.run do |navigation|
         secondary.item :countries, content_tag(:i, "", :class => "fa fa-exchange") + "Counrty", countries_path, :highlights_on => lambda { params['type'].blank? && on_controller?("countries") }
         secondary.item :countries, content_tag(:i, "", :class => "fa fa-exchange") + "Currency", currencies_path, :highlights_on => lambda { params['type'].blank? && on_controller?("currencies") }
         secondary.item :countries, content_tag(:i, "", :class => "fa fa-exchange") + "Category", categories_path, :highlights_on => lambda { params['type'].present? && on_controller?("categories") }
-        # secondary.item :campaigns, content_tag(:i, "", :class => "fa fa-exchange") + "Packages", packages_path, :highlights_on => lambda { params['type'].present? && on_controller?("packages") }
-        # secondary.item :campaigns, content_tag(:i, "", :class => "fa fa-exchange") + "Featured Packages", campaigns_path(type: 'errors'), :highlights_on => lambda { params['type'].present? && on_controller?("campaigns") }
-        # secondary.item :campaigns, content_tag(:i, "", :class => "fa fa-exchange") + "Subscriptions", campaigns_path(type: 'errors'), :highlights_on => lambda { params['type'].present? && on_controller?("campaigns") }
+        secondary.item :packages, content_tag(:i, "", :class => "fa fa-exchange") + "Packages", packages_path, :highlights_on => lambda { params['type'].present? && on_controller?("packages") }
+        secondary.item :featuredpackages, content_tag(:i, "", :class => "fa fa-exchange") + "Featured Packages", featuredpackages_path, :highlights_on => lambda { params['type'].present? && on_controller?("campaigns") }
+        secondary.item :subscriptions, content_tag(:i, "", :class => "fa fa-exchange") + "Subscriptions", subscriptions_path, :highlights_on => lambda { params['type'].present? && on_controller?("campaigns") }
         # secondary.item :campaigns, content_tag(:i, "", :class => "fa fa-exchange") + "Add Ons", campaigns_path(type: 'errors'), :highlights_on => lambda { params['type'].present? && on_controller?("campaigns") }
       end
     end

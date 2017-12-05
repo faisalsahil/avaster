@@ -1,0 +1,27 @@
+.x_panel
+  .x_title
+  .clearfix
+  .x_content
+    %p#notice= notice
+    %p
+      %strong Package title:
+      = @package.package_title
+    %p
+      %strong Coins:
+      = @package.coins
+    %p
+      %strong Free coins:
+      = @package.free_coins
+    %p
+      %strong Price:
+      = @package.price
+    %p
+      %strong Country:
+      = @package.country.country_name
+    %p
+      %strong Currency:
+      = @package.currency.currency_name
+
+    = link_to 'Edit', edit_package_path(@package)
+    |
+    = link_to 'Back', packages_path

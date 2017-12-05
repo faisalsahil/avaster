@@ -30,7 +30,7 @@ if @countries.blank?
     county_code.alpha2_code  = country['alpha2Code']
     county_code.alpha3_code  = country['alpha3Code']
     county_code.calling_code = "+#{country['callingCodes'][0]}"
-    country_code.flag_url    = country['flag']
+    county_code.flag_url     = country['flag']
     county_code.save
     
     country['currencies'].each_with_index do |c, index|

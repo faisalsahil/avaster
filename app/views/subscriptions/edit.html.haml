@@ -1,0 +1,9 @@
+.x_panel
+  .x_title
+    %h1 Editing Subscription
+  .clearfix
+  .x_content
+    = render 'form', subscription: @subscription
+    = link_to 'Show', @subscription
+    |
+    = link_to 'Back', subscriptions_path

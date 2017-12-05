@@ -1,0 +1,61 @@
+.x_panel
+  .x_title
+  .clearfix
+  .x_content
+    %p
+      %strong Coins required:
+      = @subscription.coins_required
+    %p
+      %strong Month duration:
+      = @subscription.month_duration
+    %p
+      %strong Add ons count:
+      = @subscription.add_ons_count
+    %p
+      %strong Is corporate subscription:
+      = @subscription.is_corporate_subscription
+    %p
+      %strong Is custom notification subscribe:
+      = @subscription.is_custom_notification_subscribe
+    %p
+      %strong Bulk upload count:
+      = @subscription.bulk_upload_count
+    %p
+      %strong Is repost allowed subscribe:
+      = @subscription.is_repost_allowed_subscribe
+    %p
+      %strong Draft count:
+      = @subscription.draft_count
+    %p
+      %strong Schedule count:
+      = @subscription.schedule_count
+    %p
+      %strong Custom folder count:
+      = @subscription.custom_folder_count
+    %p
+      %strong Is auto responder subscribe:
+      = @subscription.is_auto_responder_subscribe
+    %p
+      %strong Is add calender subscribe:
+      = @subscription.is_add_calender_subscribe
+    %p
+      %strong Is social media subscribe:
+      = @subscription.is_social_media_subscribe
+    %p
+      %strong Is invoice subscribe:
+      = @subscription.is_invoice_subscribe
+    %p
+      %strong Sub user count:
+      = @subscription.sub_user_count
+    %p
+      %strong Is custom banner:
+      = @subscription.is_custom_banner
+    %p
+      %strong Chat templates count:
+      = @subscription.chat_templates_count
+    %p
+      %strong Is sms notification subscribe:
+      = @subscription.is_sms_notification_subscribe
+    = link_to 'Edit', edit_subscription_path(@subscription)
+    |
+    = link_to 'Back', subscriptions_path

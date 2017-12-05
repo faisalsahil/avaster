@@ -1,0 +1,15 @@
+= simple_form_for(@package) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :package_title
+    = f.input :coins
+    = f.input :free_coins
+    = f.input :price
+    = f.label :country_id
+    = f.select :country_id, options_for_select(@countries.collect {|p| [ p[:country_name], p[:id] ] }, selected: @package.country_id), {include_blank: 'Select Country'},{class: 'form-control margin-bottom-10'}
+    = f.label :currency_id
+    = f.select :currency_id, options_for_select(@currencies.collect {|p| [ p[:currency_name], p[:id], {parent_id: p[:country_id]} ] }, selected: @package.currency_id), {include_blank: 'Select Currency'},{class: 'form-control margin-bottom-10'}
+    -#= f.association :country, label_method: :country_name, prompt: "Choose a Country"
+    -#= f.association :currency, label_method: :currency_name, prompt: "Choose a Currency"
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'

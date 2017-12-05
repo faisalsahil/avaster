@@ -18,6 +18,8 @@
 //= require jquery.datetimepicker.full
 //= require date_format
 //= require bootstrap-toggle
+//= require packages
+//= require subscriptions
 //= require jquery-custom-functions
 //= require bootstrap-modal
 //= require bootstrap-modalmanager

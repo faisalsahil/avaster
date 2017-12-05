@@ -1,0 +1,15 @@
+.x_panel
+  .clearfix
+  .x_content
+    %p
+      %strong Days:
+      = @featuredpackage.days
+    %p
+      %strong Coins required:
+      = @featuredpackage.coins_required
+    %p
+      %strong Is active:
+      = @featuredpackage.is_active
+    = link_to 'Edit', edit_featuredpackage_path(@featuredpackage)
+    |
+    = link_to 'Back', featuredpackages_path

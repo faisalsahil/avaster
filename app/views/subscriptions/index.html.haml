@@ -1,0 +1,55 @@
+.x_panel
+  .x_title
+    %h2 Subscriptions
+    = link_to 'New Subscription', new_subscription_path, class: 'btn btn-primary pull-right'
+  .clearfix
+  .x_content
+    %table.table.table-striped.subscriptions_listing_table
+      %thead
+        %tr
+          %th Coins required
+          %th Month duration
+          %th Add ons count
+          %th Is corporate subscription
+          %th Is custom notification subscribe
+          %th Bulk upload count
+          %th Is repost allowed subscribe
+          %th Draft count
+          %th Schedule count
+          %th Custom folder count
+          %th Is auto responder subscribe
+          %th Is add calender subscribe
+          %th Is social media subscribe
+          %th Is invoice subscribe
+          %th Sub user count
+          %th Is custom banner
+          %th Chat templates count
+          %th Is sms notification subscribe
+          %th Actions
+      %tbody
+        - @subscriptions.each do |subscription|
+          %tr
+            %td= subscription.coins_required
+            %td= subscription.month_duration
+            %td= subscription.add_ons_count
+            %td= subscription.is_corporate_subscription
+            %td= subscription.is_custom_notification_subscribe
+            %td= subscription.bulk_upload_count
+            %td= subscription.is_repost_allowed_subscribe
+            %td= subscription.draft_count
+            %td= subscription.schedule_count
+            %td= subscription.custom_folder_count
+            %td= subscription.is_auto_responder_subscribe
+            %td= subscription.is_add_calender_subscribe
+            %td= subscription.is_social_media_subscribe
+            %td= subscription.is_invoice_subscribe
+            %td= subscription.sub_user_count
+            %td= subscription.is_custom_banner
+            %td= subscription.chat_templates_count
+            %td= subscription.is_sms_notification_subscribe
+            %td
+              = link_to 'Show', subscription
+              |
+              = link_to 'Edit', edit_subscription_path(subscription)
+              |
+              = link_to 'Destroy', subscription, method: :delete, data: { confirm: 'Are you sure?' }

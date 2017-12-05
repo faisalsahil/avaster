@@ -5,5 +5,6 @@
             "pageLength": 10,
             "aaSorting": [[0, "asc"]]
         });
+
     });
 }(jQuery));

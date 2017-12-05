@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  package_title: MyString
+  coins: MyString
+  free_coins: MyString
+  price: MyString
+  country: one
+  currency: one
+
+two:
+  package_title: MyString
+  coins: MyString
+  free_coins: MyString
+  price: MyString
+  country: two
+  currency: two

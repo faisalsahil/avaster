@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   
   
+  resources :subscriptions
+  resources :featuredpackages
+  resources :packages
   devise_for :users
   resources :users, only:[:index, :new, :edit]
   resources :roles

@@ -1,0 +1,23 @@
+= simple_form_for(@subscription) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :coins_required
+    = f.input :month_duration
+    = f.input :add_ons_count
+    = f.input :is_corporate_subscription
+    = f.input :is_custom_notification_subscribe
+    = f.input :bulk_upload_count
+    = f.input :is_repost_allowed_subscribe
+    = f.input :draft_count
+    = f.input :schedule_count
+    = f.input :custom_folder_count
+    = f.input :is_auto_responder_subscribe
+    = f.input :is_add_calender_subscribe
+    = f.input :is_social_media_subscribe
+    = f.input :is_invoice_subscribe
+    = f.input :sub_user_count
+    = f.input :is_custom_banner
+    = f.input :chat_templates_count
+    = f.input :is_sms_notification_subscribe
+  .form-actions
+    = f.button :submit

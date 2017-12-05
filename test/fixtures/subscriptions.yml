@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coins_required: 1
+  month_duration: 1
+  add_ons_count: 1
+  is_corporate_subscription: false
+  is_custom_notification_subscribe: false
+  bulk_upload_count: 1
+  is_repost_allowed_subscribe: false
+  draft_count: 1
+  schedule_count: 1
+  custom_folder_count: 1
+  is_auto_responder_subscribe: false
+  is_add_calender_subscribe: false
+  is_social_media_subscribe: false
+  is_invoice_subscribe: false
+  sub_user_count: 1
+  is_custom_banner: false
+  chat_templates_count: 1
+  is_sms_notification_subscribe: false
+
+two:
+  coins_required: 1
+  month_duration: 1
+  add_ons_count: 1
+  is_corporate_subscription: false
+  is_custom_notification_subscribe: false
+  bulk_upload_count: 1
+  is_repost_allowed_subscribe: false
+  draft_count: 1
+  schedule_count: 1
+  custom_folder_count: 1
+  is_auto_responder_subscribe: false
+  is_add_calender_subscribe: false
+  is_social_media_subscribe: false
+  is_invoice_subscribe: false
+  sub_user_count: 1
+  is_custom_banner: false
+  chat_templates_count: 1
+  is_sms_notification_subscribe: false

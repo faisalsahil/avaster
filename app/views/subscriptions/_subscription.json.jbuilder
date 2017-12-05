@@ -1,0 +1,2 @@
+json.extract! subscription, :id, :coins_required, :month_duration, :add_ons_count, :is_corporate_subscription, :is_custom_notification_subscribe, :bulk_upload_count, :is_repost_allowed_subscribe, :draft_count, :schedule_count, :custom_folder_count, :is_auto_responder_subscribe, :is_add_calender_subscribe, :is_social_media_subscribe, :is_invoice_subscribe, :sub_user_count, :is_custom_banner, :chat_templates_count, :is_sms_notification_subscribe, :created_at, :updated_at
+json.url subscription_url(subscription, format: :json)

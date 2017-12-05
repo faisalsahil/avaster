@@ -1,0 +1,2 @@
+class Featuredpackage < ApplicationRecord
+end

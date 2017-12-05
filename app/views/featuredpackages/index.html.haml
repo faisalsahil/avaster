@@ -1,0 +1,26 @@
+.x_panel
+  .x_title
+    %h2 Featuredpackages
+    = link_to 'New Featuredpackage', new_featuredpackage_path, class: 'btn btn-primary pull-right'
+  .clearfix
+  .x_content
+    %table.table.table-striped.listing_table
+      %thead
+        %tr
+          %th Days
+          %th Coins required
+          %th Is active
+          %th Actions
+      %tbody
+        - @featuredpackages.each do |featuredpackage|
+          %tr
+            %td= featuredpackage.days
+            %td= featuredpackage.coins_required
+            %td= featuredpackage.is_active
+            %td
+              = link_to 'Show', featuredpackage
+              |
+              = link_to 'Edit', edit_featuredpackage_path(featuredpackage)
+              |
+              = link_to 'Destroy', featuredpackage, method: :delete, data: { confirm: 'Are you sure?' }
+

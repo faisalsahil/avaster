@@ -1,0 +1,31 @@
+.x_panel
+  .x_title
+    %h2 Packages
+    = link_to 'New Package', new_package_path, class: 'btn btn-primary pull-right'
+  .clearfix
+  .x_content
+    %table.table.table-striped.listing_table
+      %thead
+        %tr
+          %th Package title
+          %th Coins
+          %th Free coins
+          %th Price
+          %th Country
+          %th Currency
+          %th Actions
+      %tbody
+        - @packages.each do |package|
+          %tr
+            %td= package.package_title
+            %td= package.coins
+            %td= package.free_coins
+            %td= package.price
+            %td= package.country.country_name
+            %td= package.currency.currency_name
+            %td
+              = link_to 'Show', package
+              |
+              = link_to 'Edit', edit_package_path(package)
+              |
+              = link_to 'Destroy', package, method: :delete, data: { confirm: 'Are you sure?' }
